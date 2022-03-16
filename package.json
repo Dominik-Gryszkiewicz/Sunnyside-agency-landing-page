@@ -1,0 +1,22 @@
+{
+  "name": "sunnyside-agency-landing-page",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dominik-Gryszkiewicz/Sunnyside-agency-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dominik-Gryszkiewicz/Sunnyside-agency-landing-page/issues"
+  },
+  "homepage": "https://github.com/Dominik-Gryszkiewicz/Sunnyside-agency-landing-page#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
