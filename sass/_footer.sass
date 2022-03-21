@@ -7,10 +7,22 @@
             font-family: 'Barlow', sans-serif
             font-size: 15px
             color: hsl(168, 34%, 41%)
+            transition: .2s
+        a:hover
+            color: white
     &__socials
         width: 60%
         &__img
             width: 85%
+            transition: .3s
+        a:hover img
+            transform: scale(1.2)
     @media screen and (min-width: 600px)
         &__socials
             width: 50%
+    @media screen and (min-width: 800px)
+        &__socials
+            width: 30%
+    @media screen and (min-width: 992px)
+        &__socials
+            width: 20%

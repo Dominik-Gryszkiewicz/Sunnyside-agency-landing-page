@@ -1,6 +1,13 @@
 .services
     &__img
         padding: 0
+    @media screen and (min-width: 768px)
+        .transform
+            content: url('../images/desktop/image-transform.jpg')
+            width: 100%
+        .stand-out
+            content: url('../images/desktop/image-stand-out.jpg')
+            width: 100%
     &__info
         background-color: #FFFBF8
         display: flex
@@ -9,11 +16,11 @@
         align-items: center
         &__tittle
             font-weight: 800
-            font-size: clamp(28px, 5vw, 33px)
+            font-size: clamp(28px, 5vw, 36px)
             margin-top: 8px
         &__description
             margin: 15px 0 25px 0
-            font-size: clamp(15px, 3vw, 16px)
+            font-size: clamp(14px, 2vw, 15px)
             color: hsl(232, 10%, 55%)
         &__link
             text-transform: uppercase
@@ -22,6 +29,7 @@
             font-size: 13px
             font-weight: 800
             position: relative
+            transition: .2s
             &::after
                 content: ""
                 position: absolute
@@ -33,11 +41,18 @@
                 opacity: .4
             &--red::after
                 background-color: hsl(7, 99%, 70%)
+        a:hover
+            color: black
+            transform: scale(1.1)
+
     &__section
         min-height: 520px
         display: flex
         flex-direction: column
         justify-content: flex-end
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
         &__tittle
             font-weight: 800
             font-size: clamp(24px, 6vw, 25px)
@@ -46,16 +61,18 @@
             font-size: clamp(14px, 1vw, 15px)
         &--design
             background-image: url('../images/mobile/image-graphic-design.jpg')
-            background-repeat: no-repeat
-            background-position: center
-            background-size: cover
             color: hsl(167, 40%, 24%)
         &--photo
             background-image: url('../images/mobile/image-photography.jpg')
-            background-repeat: no-repeat
-            background-position: center
-            background-size: cover
             color: hsl(198, 62%, 26%)
+        @media screen and (min-width: 768px)
+            &--design
+                background-image: url('../images/desktop/image-graphic-design.jpg')
+            &--photo
+                background-image: url('../images/desktop/image-photography.jpg')
+        @media screen and (min-width: 1280px)
+            &--design, &--photo
+                height: 600px
     @media screen and (min-width: 600px)
         &__section
             min-height: 540px

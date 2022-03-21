@@ -13,111 +13,117 @@
 </head>
 <body>
       <header class="hero">
-        <nav class="navbar fixed-top navbar-expand-md pt-3 px-2">
-            <div class="container-xxl">
+        <nav class="navbar fixed-top navbar-expand-md py-3 px-2">
+            <div class="container-xxl px-md-3 py-md-1">
               <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="logo" class="navbar__logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="./images/icon-hamburger.svg" class="navbar-toggler-icon"></img>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto text-center py-4 py-md-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link me-md-3" href="#services">About</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                  <li class="nav-item mt-1 mt-md-0">
+                    <a class="nav-link me-md-3" href="#services__section">Services</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                  <li class="nav-item mt-1 mt-md-0">
+                    <a class="nav-link me-md-3" href="#images">Projects</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                  <li class="nav-item mt-1 mt-md-0">
+                    <a class="nav-link nav-link__active" href="#footer">Contact</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
           <div class="container-xxl h-100">
-            <div class="text-center h-100 d-flex flex-column justify-content-center align-items-center">
-              <h1 class="text-white hero__tittle pb-3">We are creatives</h1>
-              <img src="./images/icon-arrow-down.svg" alt="icon-arrow" class="hero__img pt-4 h-sm-150">
+            <div class="text-center h-100 d-flex flex-column justify-content-center  align-items-center pb-md-5">
+              <h1 class="text-white hero__tittle pb-3 px-md-5 pb-md-0">We are creatives</h1>
+              <a href="#services"><img src="./images/icon-arrow-down.svg" alt="icon-arrow" class="hero__img pt-4 mb-md-5 pt-lg-5"></a>
             </div>
           </div>    
       </header>
-      <main class="services">
-        <div class="container-xxl">
+      <main class="services" id="services">
+        <div class="container-fluid">
           <div class="row">
-            <img src="./images/mobile/image-transform.jpg" alt="image-transform" class="services__img col-12 col-md-6">
-            <div class="services__info text-center col-12 col-md-6 py-5 px-4 px-sm-5 my-sm-5">
-                <h2 class="services__info__tittle">Transform your brand</h2>
-                <p class="services__info__description">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
-                <a href="#" class="services__info__link">Learn more</a>
+            <div class="services__img services__img--transform col-12 col-md-6 order-md-2">
+              <img src='./images/mobile/image-transform.jpg' alt="image-transform" class="img-fluid transform">
             </div>
-            <img src="./images/mobile/image-stand-out.jpg" alt="image-stand-out" class="services__img col-12 col-md-6">
-            <div class="services__info text-center col-12 col-md-6 py-5 px-4 px-sm-5 my-sm-5">
-                <h2 class="services__info__tittle">Stand out to the right audience</h2>
-                <p class="services__info__description">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
-                <a href="#" class="services__info__link services__info__link--red">Learn more</a>
+            <div class="services__info text-center text-md-start align-items-md-start col-12 col-md-6 py-5 px-4 px-sm-5 py-md-4 order-md-1 px-lg-5">
+                <h2 class="services__info__tittle px-md-5">Transform your brand</h2>
+                <p class="services__info__description px-md-5">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                <a href="#" class="services__info__link align-self-md-start mx-md-5">Learn more</a>
             </div>
-            <div class="services__section services__section--design text-center col-12 col-md-6 py-4 px-4 py-sm-5 px-sm-5">
+            <div class="services__img services__img--stand-out col-12 col-md-6 order-md-3">
+              <img src='./images/mobile/image-stand-out.jpg' alt="image-stand-out" class="img-fluid stand-out">
+            </div>
+            <div class="services__info text-center text-md-start col-12 col-md-6 py-5 px-4 px-sm-5 py-md-4 order-md-4">
+                <h2 class="services__info__tittle px-md-5">Stand out to the right audience</h2>
+                <p class="services__info__description px-md-5">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+                <a href="#" class="services__info__link services__info__link--red align-self-md-start mx-md-5">Learn more</a>
+            </div>
+            <div class="services__section services__section--design text-center col-12 col-md-6 py-4 px-4 py-sm-5 px-sm-5 order-md-5" id="services__section">
               <h2 class="services__section__tittle">Graphic design</h2>
-              <p class="services__section__description">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+              <p class="services__section__description px-lg-5 mx-lg-5">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
             </div>
-            <div class="services__section services__section--photo text-center col-12 col-md-6 py-4 px-4 py-sm-5 px-sm-5">
+            <div class="services__section services__section--photo text-center col-12 col-md-6 py-4 px-4 py-sm-5 px-sm-5 order-md-5">
               <h2 class="services__section__tittle">Photography</h2>
-              <p class="services__section__description">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+              <p class="services__section__description px-lg-5 mx-lg-5">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
             </div>
           </div>
         </div>
       </main>
       <section class="testimonials text-center py-5">
-        <div class="container-xxl">
+        <div class="container">
           <div class="row">
             <h3 class="testimonials__tittle text-uppercase mb-5 py-sm-3">Client testimonials</h3>
-            <div class="testimonials__client col-12 px-sm-5">
-              <img src="./images/image-emily.jpg" alt="image-emily" class="testimonials__client__img rounded-circle">
-              <p class="testimonials__client__opinion my-4 px-3">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-              <h4 class="testimonials__client__name">Emily R.</h4>
-              <span class="testimonials__client__profession">Marketing Director</span>
-            </div>
-            <div class="testimonials__client col-12 mt-5 px-sm-5">
-              <img src="./images/image-thomas.jpg" alt="image-thomas" class="testimonials__client__img rounded-circle mt-sm-2">
-              <p class="testimonials__client__opinion my-4 px-3">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-              <h4 class="testimonials__client__name">Thomas S.</h4>
-              <span class="testimonials__client__profession">Chief Operating Officer</span>
-            </div>
-            <div class="testimonials__client col-12 mt-5 px-sm-5">
-              <img src="./images/image-jennie.jpg" alt="image-jennie" class="testimonials__client__img rounded-circle mt-sm-2">
-              <p class="testimonials__client__opinion my-4 px-3">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-              <h4 class="testimonials__client__name">Jennie F.</h4>
-              <span class="testimonials__client__profession">Business Owner</span>
+            <div class="testimonials__clients d-md-flex justify-content-center align-items-center">
+              <div class="testimonials__client d-md-flex flex-md-column align-items-md-center col-12 col-md-4 px-sm-5 px-md-1 px-lg-4">
+                <img src="./images/image-emily.jpg" alt="image-emily" class="testimonials__client__img rounded-circle">
+                <p class="testimonials__client__opinion my-4 px-3 px-md-2 my-md-5">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                <h4 class="testimonials__client__name mt-md-auto">Emily R.</h4>
+                <span class="testimonials__client__profession mt-md-2">Marketing Director</span>
+              </div>
+              <div class="testimonials__client d-md-flex flex-column align-items-center col-12 col-md-4 mt-5 mt-md-0 px-sm-5 px-md-1 px-lg-4">
+                <img src="./images/image-thomas.jpg" alt="image-thomas" class="testimonials__client__img rounded-circle mt-sm-2 mt-md-0">
+                <p class="testimonials__client__opinion my-4 px-3 px-md-2 my-md-5">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+                <h4 class="testimonials__client__name mt-md-auto">Thomas S.</h4>
+                <span class="testimonials__client__profession mt-md-2">Chief Operating Officer</span>
+              </div>
+              <div class="testimonials__client d-md-flex flex-column align-items-center col-12 col-md-4 mt-5 mt-md-0 px-sm-5 px-md-1 px-lg-4">
+                <img src="./images/image-jennie.jpg" alt="image-jennie" class="testimonials__client__img rounded-circle mt-sm-2 mt-md-0">
+                <p class="testimonials__client__opinion my-4 px-3 px-md-2 my-md-5">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                <h4 class="testimonials__client__name mt-md-auto">Jennie F.</h4>
+                <span class="testimonials__client__profession mt-md-2">Business Owner</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="images mt-3">
-        <div class="container-xxl px-0">
+      <section class="images mt-3" id="images">
+        <div class="container-fluid px-0">
           <div class="row gx-0">
-            <div class="col-6">
-              <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="image-milkbottles" class="img-fluid">
+            <div class="col-6 col-md-3">
+              <img src='./images/mobile/image-gallery-milkbottles.jpg' alt="image-gallery-milkbottles" class="img-fluid w-100 milk">
             </div>
-            <div class="col-6">
-              <img src="./images/mobile/image-gallery-orange.jpg" alt="image-orange" class="img-fluid">
+            <div class="col-6 col-md-3">
+              <img src='./images/mobile/image-gallery-orange.jpg' alt="image-gallery-orange" class="img-fluid w-100 orange">
             </div>
-            <div class="col-6">
-              <img src="./images/mobile/image-gallery-cone.jpg" alt="image-cone" class="img-fluid">
+            <div class="col-6 col-md-3">
+              <img src='./images/mobile/image-gallery-cone.jpg' alt="image-gallery-cone" class="img-fluid w-100 cone">
             </div>
-            <div class="col-6">
-              <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="image-sugar-cubes" class="img-fluid">
+            <div class="col-6 col-md-3">
+              <img src='./images/mobile/image-gallery-sugar-cubes.jpg' alt="image-gallery-sugar-cubes" class="img-fluid w-100 sugar">
             </div>
           </div>
         </div>
       </section>
-      <footer class="footer py-5 px-4 text-center">
+      <footer class="footer py-5 px-4 text-center" id="footer">
         <a href="#"><img src="./images/logo-footer.svg" alt="logo" class="footer__logo img-fluid py-sm-2"></a>
-        <ul class="footer__nav list-unstyled d-flex justify-content-around py-4 mt-2">
+        <ul class="footer__nav list-unstyled d-flex justify-content-around justify-content-md-center py-4 mt-2">
           <li><a href="#" class="footer__nav__link text-decoration-none">About</a></li>
-          <li><a href="#" class="footer__nav__link text-decoration-none">Services</a></li>
+          <li><a href="#" class="footer__nav__link text-decoration-none mx-md-5">Services</a></li>
           <li><a href="#" class="footer__nav__link text-decoration-none">Projects</a></li>
         </ul>
         <ul class="footer__socials list-unstyled d-flex justify-content-around mx-auto mt-5">
@@ -130,5 +136,6 @@
     
     
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
